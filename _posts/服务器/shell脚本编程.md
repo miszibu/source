@@ -1,5 +1,5 @@
 ---
-[Python](../../../../.Trash/Python)title: shell脚本编程
+title: shell脚本编程
 date: 2018-09-18 10:08:01
 tags: shell
 ---
