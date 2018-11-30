@@ -1,3 +1,10 @@
+---
+title: Mysql简介
+date: 2017-10-23 20:58:47
+tags: [Mysql]
+
+---
+
 ## Not Only Sql数据库
 
 非关系型数据库,这其实是个误称。实际上应该叫做超Sql数据库，NOSQL删除了传统SQL中ACID特性，既**原子性（Atomicity）、一致性（Consistency）、隔离性（Isolation）、持久性（Durability）**，从而提高了程序的效率。因此受到了互联网公司的追捧，然后在正规的事务处理中，传统的关系型数据库的事务性仍然是必不可少的。
@@ -76,10 +83,6 @@ DROP INDEX idxName ON TBName;//删除索引
 ~~~Mysql
 Mysql 进阶篇 先挖个坑 等工作上有需要了 来填 基础的功能已经够工作使用了
 ~~~
-
-
-
-
 
 **视图**
 
