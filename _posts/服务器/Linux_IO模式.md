@@ -45,7 +45,7 @@ Blocking IO:用户进程在两个阶段都被Block了。
 
 #### 2.2非阻塞IO(Non-blocking IO)
 
-![](Linux_IO模式/nonBlockingIO.gif)
+![](./Linux_IO模式/nonBlockingIO.gif)
 
 如图所示，非阻塞IO发送recvfrom请求后,若Kernel没有数据准备好，直接返回EWOULDBLOCK。
 
