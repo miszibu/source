@@ -68,7 +68,7 @@ gofmt -w testProject/ #格式化整个项目 并写入文件
 * Google Code Project Hosting (Git, Mercurial, Subversion) 
 * Launchpad (Bazaar) 
 
-### go test###
+### go test
 
 自动读取当前目录下*_test.go文件，生成并运行测试用的可执行文件。
 

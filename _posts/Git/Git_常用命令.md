@@ -184,6 +184,16 @@ git clean 参数
     -df 删除 文件 和 目录
 ~~~
 
+### 其他
+
+```shell
+# 使下一次输入的帐密 被记录 
+git config --global credential.helper store
+
+```
+
+
+
 ### 相关引用
 
 [[GIT 常用命令](http://www.cnblogs.com/chenwolong/p/GIT.html)](https://www.cnblogs.com/chenwolong/p/GIT.html)

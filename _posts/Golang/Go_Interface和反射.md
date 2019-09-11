@@ -1,13 +1,15 @@
 ---
 title: Go-Interface和反射
 date: 2018-06-04 14:27:55
-tags: [Go,Mark]
+tags: [Go]
 
 ---
 
-###Go中的接口###
+### Go中的接口
+
 Go不是传统的面向对象的编程语言，它里面没有类和继承的概念。
 但是Go语言中的**接口**概念可以很方便的实现许多面向对象的特性。
+
 ```go
 type Namer interface {
     Method1(param_list) return_type
@@ -56,8 +58,10 @@ func main() {
 
 类通过实现接口，来继承接口，注意如果在实现接口时，不加*，实际上是值传递，不能改变类的数据。
 
-###接口嵌套接口###
+### 接口嵌套接口
+
 一个接口可以包含一个或多个其他的接口。
+
 ```go
 type ReadWrite interface{
 	Read(b Buffer) bool
@@ -73,4 +77,7 @@ type File interface{
 	Close()
 }
 ```
-###类型断言###
+### 类型断言
+
+> 工作调动：不再更新 
+

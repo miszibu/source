@@ -19,7 +19,7 @@ Go中的协程又有所不同，Go的协程不由代码控制，而是Go实现�
 
 **协程间通信**：Java中的并发主要是靠锁住临界资源（共享内存）来保证同步的。而**channel**则是goroutines中通信的方法。可以把channel看做一个传送带，实际上是一个**有类型的消息队列**，FIFO。利用Channel来实现协程同步，是Go语言的优势所在，原生支持语言级并发。
 
-### Goroutine与调度器###
+### Goroutine与调度器
 
 go中不能自己创建用户级别线程，所有的都是Goroutine协程，Golang的协程调度器来维护协程在系统级线程上的运行。
 
@@ -29,7 +29,7 @@ Go的调度器分为三个重要的结构：M P G
 * **P**：Processor，主要用于维护goroutine列表并执行goroutine。存储了所有需要P来执行的gotoutine列表。还有一个**全局列表**。
 * **G**：Goroutine，G维护了goroutine需要的栈、程序计数器以及它所在的M等信息。 
 
-![go_goroutine](../img/go_goroutine.jpg)
+![go_goroutine](Go_goroutine/go_goroutine.jpg)
 
 这张图描绘了三者的关系，一个M（OS系统级线程）对应一个P(Processor协程调度器)，并执行一个G(Goroutine)，P维护了一个G的队列。
 
@@ -37,7 +37,7 @@ Go的调度器分为三个重要的结构：M P G
 * **线程空闲**：当一个线程空闲时，它会向全局的P获取G，当无法获取G时，就会从其他的P处偷取G，直接偷取一半的G。
 * **线程不足**：当M的对象不足导致P阻塞时，会启动一个新的工作线程以充分利用cpu资源。
 
-### Goroutine主动退出线程占有###
+### Goroutine主动退出线程占有
 
 在OS中，一个线程就是一个栈和相关资源。操作系统通过线程的栈来保存线程的运行信息，go通过创建goroutine来降低线程创建和上下文切换的开销。
 

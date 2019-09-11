@@ -1,7 +1,7 @@
 ---
 title: ASR语音识别
 date: 2018-04-21 10:41:27
-tags: [ASR]
+tags: [杂谈]
 
 ---
 
