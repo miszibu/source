@@ -1,14 +1,13 @@
-
-
-
-
-```
+---
 title: English Learning
-date: 2018-04-01 16:23:45
+date: 2019-09-11 14:04:55
 tags: [English]
-```
+
+---
 
 
+
+Daily Dictation
 
 <!--more-->
 

@@ -65,7 +65,8 @@ git commit -v //提交时显示所有的diff信息
 ```bash
 git branch //列出所有本地分支
 git branch -r //列出所有远程分支
-git branch -a //列出所有本地分支和远程分支3
+git branch -a //列出所有本地分支和远程分支
+git branch -vv //查看branch详情
 git branch [branchName] //新建一本地分支
 git checkout [branchName] //切换分支
 git checkout -b [branchname] //新建分支 并切换到该分支
@@ -119,17 +120,7 @@ $ git push [remote] --force
 $ git push [remote] --all
 ```
 
-## 八、远程同步
-
-```bash
-# 下载远程仓库的所有变动
-$ git fetch [remote]
-
-# 显示所有远程仓库
-$ git remote -v
-```
-
-## 九、撤销
+### 9.撤销
 
 ```bash
 # 恢复暂存区的指定文件到工作区
@@ -165,7 +156,7 @@ $ git stash
 $ git stash pop
 ```
 
-### 十、放弃本地修改
+### 10.放弃本地修改
 
 ~~~Shell
 git fetch origin 			
